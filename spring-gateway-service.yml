@@ -1,0 +1,32 @@
+server:
+  port: ${PORT:5556}
+  error:
+    include-message: always
+
+logging:
+  level:
+    root: INFO
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://reg-serv.herokuapp.com/eureka/
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: microchelik1
+          uri: lb://MICROCHELIK1
+          predicates:
+          - Path=/gety/**
+        - id: microchelik2
+          uri: lb://MICROCHELIK2
+          predicates:
+          - Path=/posty/**
