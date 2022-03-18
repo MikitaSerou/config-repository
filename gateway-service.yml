@@ -1,5 +1,5 @@
 server:
-  port: ${PORT:5558}
+  port: ${PORT:5559}
   error:
     include-message: always
 
