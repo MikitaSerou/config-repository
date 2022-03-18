@@ -28,7 +28,7 @@ spring:
         - id: microchelik1
           uri: lb://MICROCHELIK1
           predicates:
-          - Path=/gety/**
+          - Path=/gety/**,/huh/**
         - id: microchelik2
           uri: lb://MICROCHELIK2
           predicates:
