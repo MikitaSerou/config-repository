@@ -11,4 +11,4 @@ eureka:
       defaultZone: https://reg-serv.herokuapp.com/eureka/
 
 refresh:
-  word: Lol
+  word: Kek
