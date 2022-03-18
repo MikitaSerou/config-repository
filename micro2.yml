@@ -11,4 +11,7 @@ eureka:
       defaultZone: https://reg-serv.herokuapp.com/eureka/
 
 refresh:
-  word: Kek
+  word: Kekes
+
+putin:
+  huilo: true
