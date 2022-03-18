@@ -12,6 +12,9 @@ eureka:
     serviceUrl:
       defaultZone: https://reg-serv.herokuapp.com/eureka/
 
+refresh:
+  word: kek
+  
 spring:
   application:
     name: gateway-service
