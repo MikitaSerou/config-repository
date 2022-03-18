@@ -3,7 +3,7 @@ spring:
     name: microchelik2
 
 server:
-  port: 4464
+  port: 4424
 
 eureka:
   client:
